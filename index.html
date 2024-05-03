@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Js</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta name="author" content="Mattia Emanuele Balestrucci">
+  <meta name="description" content="Simple calculator">
+</head>
+
+<body>
+  <main>
+    <div id="contenitore">
+      <div>
+        <p id="visore">0</p>
+      </div>
+      <div id="tastiera">
+        <input type="button" id="t_1" value="1" onclick="Calcolatrice.tasto('1')">
+        <input type="button" id="t_2" value="2" onclick="Calcolatrice.tasto('2')">
+        <input type="button" id="t_3" value="3" onclick="Calcolatrice.tasto('3')">
+        <input type="button" id="t_piu" value="+" onclick="Calcolatrice.tasto('+')">
+        <input type="button" id="t_indietro" value="&larr;"  onclick="Calcolatrice.indietro()"><br>
+
+        <input type="button" id="t_4" value="4" onclick="Calcolatrice.tasto('4')">
+        <input type="button" id="t_5" value="5" onclick="Calcolatrice.tasto('5')">
+        <input type="button" id="t_6" value="6" onclick="Calcolatrice.tasto('6')">
+        <input type="button" id="t_meno" value="-" onclick="Calcolatrice.tasto('-')">
+        <input type="button" id="t_cancella" value="C"  onclick="Calcolatrice.cancella()"><br>
+
+        <input type="button" id="t_7" value="7"  onclick="Calcolatrice.tasto('7')">
+        <input type="button" id="t_8" value="8"  onclick="Calcolatrice.tasto('8')">
+        <input type="button" id="t_9" value="9"  onclick="Calcolatrice.tasto('9')">
+        <input type="button" id="t_per" value="x"  onclick="Calcolatrice.tasto('*')">
+        <input type="button" id="t_v" value="&Sqrt;"  onclick="Calcolatrice.radice()"><br> <!-- radice quadrata -->
+
+        <input type="button" id="t_punto" value="."  onclick="Calcolatrice.tasto('.')">
+        <input type="button" id="t_0" value="0" onclick="Calcolatrice.tasto('0')">
+        <input type="button" id="t_pm" value="&pm;"  onclick="Calcolatrice.pom()"> <!-- più o meno -->
+        <input type="button" id="t_diviso" value="&div;"  onclick="Calcolatrice.tasto('/')"> <!-- diviso -->
+        <input type="button" id="t_uguale" value="="  onclick="Calcolatrice.calcola()"><br>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
